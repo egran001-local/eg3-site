@@ -118,15 +118,32 @@
     padding-left: 0.5rem;
   }
 
-  ul.links .note {
+  ul.links a:hover .note { color: var(--muted); }
+
+  /* Projects text-only list */
+  ul.projects li {
+    border-top: 1px solid var(--border);
+    padding: 1rem 0.25rem 1rem 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  ul.projects li:last-child { border-bottom: 1px solid var(--border); }
+
+  ul.projects .title {
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  ul.projects .desc {
     color: var(--faint);
     font-weight: 400;
     font-size: 0.9375rem;
     text-align: right;
     flex-shrink: 0;
+    max-width: 20rem;
   }
-
-  ul.links a:hover .note { color: var(--muted); }
 
   a:focus-visible {
     outline: 2px solid var(--accent);
@@ -196,6 +213,25 @@
           <span>GitHub</span>
           <span class="note">Projects and experiments</span>
         </a>
+      </li>
+    </ul>
+
+    <hr class="rule">
+
+    <h2>Projects</h2>
+
+    <ul class="projects">
+      <li>
+        <span class="title">Stop Predatory Gambling California</span>
+        <span class="desc">Volunteer advocacy treating gambling harm as a public-health and consumer-protection issue.</span>
+      </li>
+      <li>
+        <span class="title">Home lab and local AI</span>
+        <span class="desc">A Mac mini and a GPU desktop running self-hosted services and private AI models, including the agent that helps maintain this site.</span>
+      </li>
+      <li>
+        <span class="title">Public-sector SaaS delivery</span>
+        <span class="desc">Implementation, support, and operational systems for state and local government software.</span>
       </li>
     </ul>
   </div>

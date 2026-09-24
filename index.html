@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ernie Granillo</title>
+<meta name="description" content="Ernie Granillo — public-sector software implementation, cloud systems, and technical operations.">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #171614;
+    --surface: #1C1B19;
+    --border: #393836;
+    --text: #CDCCCA;
+    --muted: #797876;
+    --faint: #5A5957;
+    --accent: #4F98A3;
+    --accent-hover: #7FBCC5;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+  }
+
+  main { flex: 1 0 auto; padding: 14vh 0 6rem; }
+
+  .eyebrow {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1.25rem;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 4.25rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin: 0 0 1.5rem;
+  }
+
+  .lede {
+    font-size: clamp(1.0625rem, 2.4vw, 1.3125rem);
+    line-height: 1.5;
+    color: var(--text);
+    margin: 0 0 1.5rem;
+    max-width: 34rem;
+  }
+
+  p.body { color: var(--muted); margin: 0 0 1.25rem; max-width: 34rem; }
+
+  .rule {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 3.5rem 0 2.25rem;
+  }
+
+  h2 {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 1.5rem;
+  }
+
+  ul.links { list-style: none; margin: 0; padding: 0; }
+
+  ul.links li { border-top: 1px solid var(--border); }
+  ul.links li:last-child { border-bottom: 1px solid var(--border); }
+
+  ul.links a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem 0.25rem 1rem 0;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 160ms ease, padding-left 160ms ease;
+  }
+
+  ul.links a:hover,
+  ul.links a:focus-visible {
+    color: var(--accent-hover);
+    padding-left: 0.5rem;
+  }
+
+  ul.links .note {
+    color: var(--faint);
+    font-weight: 400;
+    font-size: 0.9375rem;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  ul.links a:hover .note { color: var(--muted); }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  footer {
+    flex-shrink: 0;
+    border-top: 1px solid var(--border);
+    padding: 1.75rem 0;
+    color: var(--faint);
+    font-size: 0.875rem;
+  }
+
+  footer .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    justify-content: space-between;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <div class="wrap">
+    <p class="eyebrow">eg3.me</p>
+
+    <h1>Ernie Granillo</h1>
+
+    <p class="lede">
+      I build and deliver software for the public sector — implementation,
+      cloud systems, and the operational work that keeps them running.
+    </p>
+
+    <p class="body">
+      Most of what I do sits between the technology and the people who
+      depend on it: scoping implementations, untangling systems, and
+      writing down how things actually work so the next person doesn't
+      have to guess.
+    </p>
+
+    <hr class="rule">
+
+    <h2>Elsewhere</h2>
+
+    <ul class="links">
+      <li>
+        <a href="mailto:hello@eg3.me">
+          <span>Email</span>
+          <span class="note">hello@eg3.me</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/" rel="me">
+          <span>LinkedIn</span>
+          <span class="note">Professional background</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/" rel="me">
+          <span>GitHub</span>
+          <span class="note">Projects and experiments</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>San Jose, California</span>
+    <span>&copy; 2026 Ernie Granillo</span>
+  </div>
+</footer>
+
+</body>
+</html>

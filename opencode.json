@@ -6,14 +6,14 @@
       "name": "Gaming PC (Ollama)",
       "options": { "baseURL": "http://100.123.225.38:11434/v1" },
       "models": {
-        "qwen3.6:35b-a3b": {
+        "qwen3.8:27b_q3_k_xl": {
           "name": "Qwen 3.6 35B-A3B",
           "limit": { "context": 65536, "output": 8192 }
         }
       }
     }
   },
-  "model": "pc/qwen3.6:35b-a3b",
+  "model": "pc/qwen3.8:27b_q3_k_xl",
   "permission": {
     "edit": "allow",
     "webfetch": "ask",
